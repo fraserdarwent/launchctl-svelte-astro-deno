@@ -14,9 +14,9 @@ jobs:
         with:
           node-version: 16.x
       - name: Install dependencies
-        run: npm install
+        run: yarn install --production
       - name: Build site
-        run: npm run build
+        run: yarn build
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
