@@ -20,6 +20,6 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project:
+          project: {{.Project}}
           root: ./dist
           entrypoint: server/entry.mjs
